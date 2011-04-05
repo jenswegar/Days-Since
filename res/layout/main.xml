@@ -1,27 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/appwidget_bg"
     android:layout_gravity="center"
     >
 	
-	<TextView android:id="@+id/widget_header"
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:layout_gravity="center"
-    android:paddingTop="10dip" 
-    android:textSize="10dip" 
-    android:textColor="#ffffff" 
-    android:text="@string/headerDisplay"
-    />
-	<TextView android:id="@+id/widget_textview"
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content" 
-    android:layout_gravity="center" 
-    android:textSize="35dip" 
-    android:textColor="#ffffff" 
-    android:text="@string/dayDisplay"
-    />
-</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:paddingLeft="20dip"
+    >	
+		<TextView android:id="@+id/widget_header"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="center"
+	    android:paddingTop="10dip" 
+	    android:textSize="10dip" 
+	    android:textColor="#ffffff" 
+	    android:text="@string/headerDisplay"
+	    />
+	    
+		<TextView android:id="@+id/widget_textview"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="center" 
+	    android:textSize="35dip" 
+	    android:textColor="#ffffff" 
+	    android:text="@string/dayDisplay"
+	    />
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:paddingRight="20dip"
+    >	
+		<TextView android:id="@+id/widget_header_flickr"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="center"
+	    android:paddingTop="10dip" 
+	    android:textSize="10dip" 
+	    android:textColor="#ffffff" 
+	    android:text="@string/headerDisplayFlickr"
+	    />
+	    
+		<TextView android:id="@+id/widget_textview_flickr"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="center" 
+	    android:textSize="35dip" 
+	    android:textColor="#ffffff" 
+	    android:text="@string/numPhotoDisplay"
+	    />
+	</LinearLayout>	
+</RelativeLayout>
