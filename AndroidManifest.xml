@@ -4,8 +4,17 @@
       android:versionCode="2"
       android:versionName="0.2.0">
 
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
+	
+	<!-- Permissions needed -->
+	<uses-permission android:name="android.permission.INTERNET" />
 
+	<!-- App setup -->
     <application android:icon="@drawable/icon" android:label="@string/app_name">
+    
+    	<service android:name="fi.wegar.android.dayssince.UpdateService" />
+    
+    	
 		<receiver android:name="fi.wegar.android.dayssince.DaysWidget">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
