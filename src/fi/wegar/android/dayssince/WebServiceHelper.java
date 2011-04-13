@@ -11,6 +11,7 @@ import com.aetrion.flickr.photosets.Photoset;
 import com.aetrion.flickr.photosets.PhotosetsInterface;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 
 public class WebServiceHelper {
@@ -19,7 +20,7 @@ public class WebServiceHelper {
 	
 	private static Flickr mFlickr;
 	
-	public static int updatePhotoCount(Context context) {
+	public static int updatePhotoCount(String photoSetId) {
 		Log.d(TAG, "updatePhotoCount started");
 		
 		if(mFlickr == null) {
@@ -30,7 +31,7 @@ public class WebServiceHelper {
 		Photoset mPhotoInfo = null;
 		
 		try {
-			mPhotoInfo = mPhotoSet.getInfo("72157625668398367");
+			mPhotoInfo = mPhotoSet.getInfo(photoSetId);
 		} catch (IOException e) {
 			Log.e(TAG, e.getMessage() );
 		} catch (SAXException e) {

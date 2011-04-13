@@ -5,4 +5,7 @@
     <string name="headerDisplay">Days since</string>
     <string name="headerDisplayFlickr">Photos in project365 set</string>
     <string name="numPhotoDisplay">-</string>
+    <string name="saveButton">Save</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="photoSetIdLabel">Enter ID of project365 photo set</string>
 </resources>
