@@ -7,10 +7,14 @@ An Android Widget that shows the number of days since New Years and also shows h
 ###v.0.1.0 (released)
 - Show days since New years in a widget
 
-###v.0.2.0
+###v.0.2.0 (released)
 
 - Implement Flickr API calls to fetch list of photos in hard coded Flickr set
 - Show both days since New years and number of photos in Widget screen
 
-###v.0.3.0
-- Make set and user details configurable through config activity
+###v.0.3.0 (released)
+- Make photo set configurable through config activity when adding widget
+
+###v.0.4.0
+- stabilize code
+- clean up code
